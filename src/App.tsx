@@ -14,9 +14,10 @@ import Skills from "./components/Skills";
 import InterestSelection from "./components/Interest";
 import ProjectSection from "./components/Project";
 import ProfilePictureUpload from "./components/Picture";
+import Home from "./pages/Home/Home";
 
 function App() {
-  const [email, setEmail] = useState(""); 
+  const [email, setEmail] = useState("");
   return (
     <EmailContext.Provider value={{ email, setEmail }}>
       <Router>
@@ -32,7 +33,8 @@ function App() {
           <Route path="/Skills" element={<Skills />} />
           <Route path="/Interest" element={<InterestSelection />} />
           <Route path="/project" element={<ProjectSection />} />
-          <Route path="/Profile_Picture" element={<ProfilePictureUpload/>} />
+          <Route path="/Profile_Picture" element={<ProfilePictureUpload />} />
+          <Route path="/home" element={<Home />} />
         </Routes>
       </Router>
     </EmailContext.Provider>
