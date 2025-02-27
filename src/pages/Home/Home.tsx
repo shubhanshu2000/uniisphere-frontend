@@ -86,7 +86,16 @@ const Home = () => {
           </div>
           <div className="flex items-center space-x-2 ">
             <div className="bg-[#F2F1F1] px-2 py-1 rounded-xl text-xs">
-              <p>+ CONNECT</p>
+              <p>
+                <span className="text-[#30B4FE]">+</span>{" "}
+                <span className="text-[#44a9b1]">C</span>
+                <span className="text-[#e9877a]">O</span>
+                <span className="text-[#e1c86b]">N</span>
+                <span className="text-[#8f979b]">N</span>
+                <span className="text-[#ea8e82]">E</span>
+                <span className="text-[#ac89a3]">C</span>
+                <span className="text-[#e9877a]">T</span>
+              </p>
             </div>
             <HiDotsVertical />
           </div>
