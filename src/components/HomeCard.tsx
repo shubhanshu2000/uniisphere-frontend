@@ -1,6 +1,7 @@
 import { HiDotsVertical } from "react-icons/hi";
 import { PiShareFat } from "react-icons/pi";
 import { CiHeart } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 interface HomeCardProps {
   index: number;
@@ -15,11 +16,13 @@ const HomeCard = ({ index }: HomeCardProps) => {
     >
       <div className="flex justify-between">
         <div className="flex items-center space-x-2 ">
-          <img
-            className="h-10 w-10 rounded-full"
-            src="/assets/profile.jpg"
-            alt="profile"
-          />
+          <Link to={"/profile"}>
+            <img
+              className="h-10 w-10 rounded-full"
+              src="/assets/profile.jpg"
+              alt="profile"
+            />
+          </Link>
           <div>
             <h1 className="text-sm">
               Vijay Prasad <span className="text-gray-400 text-xs">18 h</span>

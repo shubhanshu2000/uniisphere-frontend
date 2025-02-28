@@ -15,6 +15,7 @@ import InterestSelection from "./components/Interest";
 import ProjectSection from "./components/Project";
 import ProfilePictureUpload from "./components/Picture";
 import Home from "./pages/Home/Home";
+import Profile from "./pages/Profile/Profile";
 
 function App() {
   const [email, setEmail] = useState("");
@@ -35,6 +36,7 @@ function App() {
           <Route path="/project" element={<ProjectSection />} />
           <Route path="/Profile_Picture" element={<ProfilePictureUpload />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </Router>
     </EmailContext.Provider>

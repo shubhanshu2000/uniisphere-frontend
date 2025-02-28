@@ -1,16 +1,19 @@
 import { CiSearch } from "react-icons/ci";
 import { MdOutlineMessage } from "react-icons/md";
 import HomeCard from "../../components/HomeCard";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <div className="relative">
       <header className="flex justify-around items-center px-2 py-4 bg-white fixed top-0 w-full z-1">
-        <img
-          className="h-10 w-10 rounded-full"
-          src="/assets/profile.jpg"
-          alt="profile"
-        />
+        <Link to={"/profile"}>
+          <img
+            className="h-10 w-10 rounded-full"
+            src="/assets/profile.jpg"
+            alt="profile"
+          />
+        </Link>
         <div className="relative px-4 py-1 rounded-full shadow-[inset_0_0_10px_#7e7c7c] ">
           <input
             className="focus:outline-none active:outline-none"
